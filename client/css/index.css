@@ -14,119 +14,119 @@
 
 .main__address{margin:0 auto;padding:20px;text-align:center;color:#5B97B1}
 
-.art__header{padding-top:30px;text-align:center}.art__text{margin:0 auto;max-width:800px;padding:30px}.art__text p{padding:15px 0;line-height:1.7}.team{margin:0 auto;padding:60px 0;max-width:80%;width:900px;background-color:#d6dcd3}.team h1{font-weight:400;text-align:center;font-size:40px}.team div{padding:15px}.team div h2{padding-bottom:7px;font-weight:400;font-size:25px}.team .team__research{background-color:#f93}.goals{background-color:#eff7f2}.goals_header{padding-top:30px;text-align:center}.goals_descriptions{margin:0 auto;max-width:800px;padding:30px;color:#000}.programs ul li{margin-left:50px}.programs a{text-decoration:none;color:#00f}.programs a:hover{border-bottom:1px solid #000;text-decoration:none;background-color:gray}.programs a:hover:after{content:"\00bb"}.news{margin:0 auto;max-width:900px;width:80%;padding:60px 0;background-color:#c7e5b0}.news h2{padding-top:30px;text-align:center}.news .news__block{margin:0 auto;max-width:900px;width:80%;padding:15px 30px}.news .news__block h3{margin:0 auto} 
+.art__header{padding-top:30px;text-align:center}.art__text{margin:0 auto;max-width:800px;padding:30px}.art__text p{padding:15px 0;line-height:1.7}.team{margin:0 auto;padding:60px 0;max-width:80%;width:900px;background-color:#d6dcd3}.team h1{font-weight:400;text-align:center;font-size:40px}.team div{padding:15px}.team div h2{padding-bottom:7px;font-weight:400;font-size:25px}.team .team__research{background-color:#f93}.goals{background-color:#eff7f2}.goals_header{padding-top:30px;text-align:center}.goals_descriptions{margin:0 auto;max-width:800px;padding:30px;color:#000}.programs ul li{margin-left:50px}.programs a{text-decoration:none;color:#00f}.programs a:hover{border-bottom:1px solid #000;text-decoration:none;background-color:gray}.programs a:hover:after{content:"\00bb"}.news{margin:0 auto;max-width:900px;width:80%;padding:60px 0;background-color:#c7e5b0}.news h2{padding-top:30px;text-align:center}.news .news__block{margin:0 auto;max-width:900px;width:80%;padding:15px 30px}.news .news__block h3{margin:0 auto}
 
 
 <!-- amy: this is for the quote box -->
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 button {
-  background: none;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  outline: 0;
-  color: black;
-  display: inline-block;
-  width: 250px;	
-  height: 250px;
-  position: relative;
-  bottom: -340px;
-  right: 1050px;
+	background: none;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	color: black;
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	position: relative;
+	bottom: -340px;
+	right: 1050px;
 }
 span {
-  display: block;
+	display: block;
 }
 .shadow:before,
 .shadow:after {
-  content: '';
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 100px;
-  background: red;
-  z-index: -1;
-  background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-  opacity: .4;
-  transform: rotateX(0);
-  transform-origin: center 30px;
-  filter: blur(1px);
-  animation: shadowLeft 2s ease-in-out alternate infinite;
-  transition: all 1s cubic-bezier(0.875, -0.555, 0.190, 1.640);
+	content: '';
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	background: red;
+	z-index: -1;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+	opacity: .4;
+	transform: rotateX(0);
+	transform-origin: center 30px;
+	filter: blur(1px);
+	animation: shadowLeft 2s ease-in-out alternate infinite;
+	transition: all 1s cubic-bezier(0.875, -0.555, 0.190, 1.640);
 }
 @keyframes shadowLeft {
-  to {
-    opacity: .1;
-    filter: blur(5px);
-  }
+	to {
+		opacity: .1;
+		filter: blur(5px);
+	}
 }
 .shadow:after {
-  background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-  opacity: .1;
-  filter: blur(5px);
-  animation: shadowRight 2s ease-in-out alternate infinite;
+	background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+	opacity: .1;
+	filter: blur(5px);
+	animation: shadowRight 2s ease-in-out alternate infinite;
 }
 @keyframes shadowRight {
-  to {
-    opacity: .4;
-    filter: blur(1px);
-  }
+	to {
+		opacity: .4;
+		filter: blur(1px);
+	}
 }
 button:focus .shadow:before,
 button:focus .shadow:after {
-  transform: rotateX(180deg);
+	transform: rotateX(180deg);
 }
 
 
 .vert {
-  transform: translateY(-20px);
-  animation: vert 1s ease-in-out alternate infinite;
+	transform: translateY(-20px);
+	animation: vert 1s ease-in-out alternate infinite;
 }
 @keyframes vert {
-  to {
-    transform: translateY(-25px);
-  }
+	to {
+		transform: translateY(-25px);
+	}
 }
 .floating {
-  background-color: transparent;
-  -webkit-perspective: 800;
-  -webkit-transform-style: preserve-3d;
-  transform: rotateY(-3deg) skewY(-3deg);
-  animation: swing 2s cubic-bezier(0.420, 0.000, 0.580, 1.000) alternate infinite;
+	background-color: transparent;
+	-webkit-perspective: 800;
+	-webkit-transform-style: preserve-3d;
+	transform: rotateY(-3deg) skewY(-3deg);
+	animation: swing 2s cubic-bezier(0.420, 0.000, 0.580, 1.000) alternate infinite;
 }
 @keyframes swing {
-  to {
-    transform: rotateY(3deg) skewY(3deg);
-  }
+	to {
+		transform: rotateY(3deg) skewY(3deg);
+	}
 }
 .floating span {
-  display: block;
-  padding: 10px 0;
-  border-radius: 100px;
-  font-size: 20px;
-  background: #fff;
-  transition: all 1s cubic-bezier(0.875, -0.555, 0.190, 1.640);
-  transform: translateY(-3px) translateZ(5px) rotateX(0);
-  width: 100%;
+	display: block;
+	padding: 10px 0;
+	border-radius: 100px;
+	font-size: 20px;
+	background: #fff;
+	transition: all 1s cubic-bezier(0.875, -0.555, 0.190, 1.640);
+	transform: translateY(-3px) translateZ(5px) rotateX(0);
+	width: 100%;
 }
 span.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #aaa;
-  transform: translateY(3px) translateZ(-5px) rotateX(-180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #aaa;
+	transform: translateY(3px) translateZ(-5px) rotateX(-180deg);
 }
 button:focus .front {
-  transform: translateY(3px) translateZ(-5px) rotateX(180deg);
-  background: #aaa;
+	transform: translateY(3px) translateZ(-5px) rotateX(180deg);
+	background: #aaa;
 }
 
 button:focus .back {
-  transform: translateY(-3px) translateZ(5px) rotateX(0);
-  background: #fff;
+	transform: translateY(-3px) translateZ(5px) rotateX(0);
+	background: #fff;
 }
 <!-- amy: this is end of the quote box -->
 
@@ -137,54 +137,54 @@ button:focus .back {
 }
 
 .button {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #FFCE00;
-  cursor: pointer;
-  display: inline-block;
-  width:60px;
-  height:60px;
-  line-height:50px;
-  border: 2px solid #5B97B1;
-  border-radius: 50%;
-  font-family: Arial;
-  font-size: 12px;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  position: relative;
-  bottom: -370px;
-  right: 80px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	color: #FFCE00;
+	cursor: pointer;
+	display: inline-block;
+	width:60px;
+	height:60px;
+	line-height:50px;
+	border: 2px solid #5B97B1;
+	border-radius: 50%;
+	font-family: Arial;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+	bottom: -370px;
+	right: 80px;
 
 }
 @-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+	0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+	0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 
 @keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+	50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+	100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 
 .button {
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
+	-webkit-animation: glowing 1500ms infinite;
+	-moz-animation: glowing 1500ms infinite;
+	-o-animation: glowing 1500ms infinite;
+	animation: glowing 1500ms infinite;
 }
