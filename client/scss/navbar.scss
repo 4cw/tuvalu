@@ -6,6 +6,8 @@ $navbar-height: 60px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #606075;
+	position:fixed;
+	width:100%;
 
 
 	@media all and (max-width: 500px) {
