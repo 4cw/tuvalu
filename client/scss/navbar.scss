@@ -31,11 +31,11 @@ $navbar-height: 60px;
 				}
 			}
 		}
+	}
 
-		.home {
-			justify-content: flex-start;
-			align-items: center;
-		}
+	&__home {
+		justify-content: flex-start;
+		align-items: center;
 	}
 }
 
