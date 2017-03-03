@@ -4,6 +4,12 @@
 	100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 
+@keyframes swing {
+	0% {transform: rotateY(-3deg) skewY(-3deg)}
+	50% {transform: rotateY(3deg) skewY(3deg)}
+	100% {transform: rotateY(-3deg) skewY(-3deg)}
+}
+
 .home {
 	min-width: 100vw;
 	min-height: calc(100vh - #{$navbar-height};
@@ -36,12 +42,20 @@
 			height: 40px;
 			width: 40px;
 			border-radius: 100%;
-			/*background: red;*/
 			border: none;
 			-webkit-animation: glowing 1500ms infinite;
 			-moz-animation: glowing 1500ms infinite;
 			-o-animation: glowing 1500ms infinite;
 			animation: glowing 1500ms infinite;
+		}
+
+		&--swing {
+			width: 300px;
+			height: 90px;
+			position: absolute;
+			left: 40px;
+			bottom: 0px;
+			animation: swing 1500ms infinite;
 		}
 	}
 
