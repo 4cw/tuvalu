@@ -10,6 +10,9 @@ a {
 	color: inherit;
 }
 
+section {
+	padding-top: 80px;
+}
 
 /* CSS Imports */
 @import 'navbar';
@@ -19,3 +22,4 @@ a {
 @import 'team';
 @import 'goals';
 @import 'news';
+@import 'about';

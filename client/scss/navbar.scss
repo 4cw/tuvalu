@@ -6,6 +6,8 @@ $navbar-height: 60px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #606075;
+	position:fixed;
+	width:100%;
 
 
 	@media all and (max-width: 500px) {
@@ -18,28 +20,22 @@ $navbar-height: 60px;
 		justify-content: flex-end;
 		background-color: #606075;
 
-	
-
-
 		p {
 			padding: 0 15px;
 			cursor: pointer;
 			color: white;
-		
 
 			a {
 				&:hover {
 					border-bottom: 2px solid black;
 				}
-
 			}
 		}
+	}
 
-		.home {
-			justify-content: flex-start;
-			align-items: center;
-			
-		}
+	&__home {
+		justify-content: flex-start;
+		align-items: center;
 	}
 }
 
@@ -65,7 +61,5 @@ $navbar-height: 60px;
 		p {
 			padding: 3px;
 		}
-
 	}
-
 }

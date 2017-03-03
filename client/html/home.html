@@ -1,15 +1,26 @@
+<!-- home page -->
 <template name='home'>
-	<section class='main'>
-		<h1 class='main__header'>Tuvalu</h1>
+	<body>
+		<section class='home'>
+			<h1 class='home__header'>Tuvalu Pavilion at the 57th Venice Biennale:</h1>
+			<div class='home__address'>
+				<p>CLIMATE CANARY</p>
+				<p>Vincent J. F. Huang</p>
+			</div>
+			<div class='home__options'>
+				<button>
+					<a href="{{pathFor 'about'}}">Tuvalu</a>
+				</button>
 
-		<div class='main__options'>
-			<a class='main__options__option' href={{pathFor 'about'}}><button>About</button></a>
-		</div>
+				<p class='home__options--swing'>"Of all the nations in the world, Tuvalu is perhaps the most vulnerable to climate change."</p>
+			</div>
+		</section>
 
-		<div class='main__address'>
-			<p>Tuvalu Pavilion at the 57th Venice Biennale</p>
-			<p>CLIMATE CANARY</p>
-			<p>Vincent J. F. Huang</p>
-		</div>
-	</section>
+		<!-- audio not working for some reason
+	  <audio controls>
+	  <source src="test.mp3" autoplay>
+	  </audio>
+		-->
+
+	</body>
 </template>

@@ -31,6 +31,10 @@ $footer-height: 80px;
 			border: 1px solid white;
 			font-size: 15px;
 			color: white;
+
+			&:hover {
+				background-color: #008080;
+			}
 			// background-color: rgb(27, 121, 167);
 
 			@media all and (max-width: $media-query) {

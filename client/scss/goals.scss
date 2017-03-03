@@ -1,45 +1,43 @@
-
 .goals {
-	background-color: #eff7f2;
-}
 
-.goals_header {
-	padding-top: 30px;
-	text-align: center;
-}
-
-.goals_descriptions {
 	margin: 0 auto;
 	max-width: 800px;
-	padding: 30px;
-	color: black;
-}
 
-.programs {
-	
-	ul{
-		li{
-			
-			margin-left: 50px;
-			
+	.goals_header {
+		text-align: center;
+	}
+
+	.goals_descriptions {
+		padding: 30px;
+		color:  black;
+
+		h3 {
+
 		}
 	}
 
-	a {
+	.programs {
 
-    	text-decoration: none;
-    	color: blue;
- 
-	}
+		ul{
 
-	a:hover {
-  		border-bottom: 1px solid black;
-  		text-decoration: none;
-  		background-color: gray;
-	}
+			li {
+				margin-left: 50px;
 
-	a:hover:after {
-		content: "\00bb";
+				a {
+					text-decoration: none;
+					color: blue;
+
+					&:hover {
+						border-bottom: 1px solid black;
+						text-decoration: none;
+						background-color: gray;
+					}
+
+					&:hover:after {
+						content: "\00bb";
+					}
+				}
+			}
+		}
 	}
-	
 }
