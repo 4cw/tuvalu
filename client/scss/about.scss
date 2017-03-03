@@ -1,41 +1,16 @@
-<<<<<<< HEAD
 .about{
-    background: purple; 
-    color: aliceblue;
-    
-    
-    &__header{
-        color: blue;
-        align: center;
-        font-size: 20px;
-    }
-    p{
-        text-align: center;
-        padding: 30px;
-    }
-    
-    h{
-        color: black
-        align: center;
-        font-size: 20px; 
-    }
-    
-    
-    
-    
-    
-    
-}
-=======
+	background: purple;
+	color: aliceblue;
 
-.tuvalu__header {
-	text-align: center;
-	font-size: 20px;
-}
 
-.about__description {
-	margin : 0 auto;
-	max-width: 800px;
-	padding: 30px;
+	&__header{
+		color: blue;
+		align: center;
+		font-size: 20px;
+	}
+
+	p{
+		text-align: center;
+		padding: 30px;
+	}
 }
->>>>>>> 8f013a4a8e4b1567e2b1208cadf5deb2669d657c
