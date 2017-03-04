@@ -13,8 +13,7 @@
 .home {
 	min-width: 100vw;
 	min-height: calc(100vh - #{$navbar-height};
-	background-repeat: no-repeat;
-	background-size: 100vw 100vh;
+	background-color: #c2d8fc;
 
 	&__header {
 		text-align: center;
@@ -22,6 +21,7 @@
 
 	&__description {
 		font-family: 'Sansita', sans-serif;
+		padding-top: 10px;
 		font-size: 30px;
 		text-align: center;
 	}
@@ -55,7 +55,7 @@
 			position: absolute;
 			left: 40px;
 			bottom: 0px;
-			animation: swing 1500ms infinite;
+			animation: swing 2500ms infinite;
 		}
 	}
 
