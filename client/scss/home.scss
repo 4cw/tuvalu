@@ -10,52 +10,78 @@
 	100% {transform: rotateY(-3deg) skewY(-3deg)}
 }
 
+@keyframes slideFromRight {
+	0% { transform: translateX(30%)}
+	100% {transform: translateX(0%)}
+}
+
+@keyframes slideFromRightTwo {
+	0% { transform: translateX(100%)}
+	10% {transform: translateX(100%)}
+	20% {transform: translateX(100%)}
+	30% {transform: translateX(100%)}
+	40% {transform: translateX(100%)}
+	50% {transform: translateX(100%)}
+	100% {transform: translateX(0%)}
+}
+
 .home {
 	min-width: 100vw;
 	min-height: calc(100vh - #{$navbar-height};
-	background-color: #c2d8fc;
+		background-color: #c2d8fc;
 
-	&__header {
-		text-align: center;
-	}
-
-	&__description {
-		font-family: 'Sansita', sans-serif;
-		padding-top: 10px;
-		font-size: 30px;
-		text-align: center;
-	}
-
-	&__options {
-		min-height: 580px;
-		padding-top: 60px;
-		background-image: url("http://www.clker.com/cliparts/N/e/T/x/M/W/world-map-silhouette.svg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-
-		button {
-			position: absolute;
-			height: 40px;
-			width: 40px;
-			border-radius: 100%;
-			border: none;
-			animation: glowing 1500ms infinite;
-			right: 10%;
+		&__header {
+			text-align: center;
+			font-family: 'Abril Fatface', cursive;
 		}
 
-		&--swing {
-			width: 300px;
-			height: 90px;
-			position: absolute;
-			left: 40px;
-			bottom: 0px;
-			animation: swing 2500ms infinite;
+		&__description {
+			font-family: 'Sansita', sans-serif;
+			padding-top: 10px;
+			font-size: 30px;
+			text-align: center;
+			animation: slideFromRight 10000ms 1;
+		}
+
+		.delay {
+			animation-delay: 5s;
+			animation: slideFromRightTwo 10000ms 1;
+		}
+
+
+		&__options {
+			min-height: 580px;
+			padding-top: 60px;
+			background-image: url("http://www.clker.com/cliparts/N/e/T/x/M/W/world-map-silhouette.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+			button {
+				position: absolute;
+				height: 40px;
+				width: 40px;
+				border-radius: 100%;
+				border: none;
+				animation: glowing 1500ms infinite;
+				right: 10%;
+			}
+
+			&--swing {
+				width: 300px;
+				height: 90px;
+				position: absolute;
+				left: 40px;
+				bottom: 0px;
+				animation: swing 2500ms infinite;
+			}
+		}
+
+		&__address {
+			margin: 0 auto;
+			padding: 30px;
+			text-align: center;
+			p {
+				font-family: 'Sansita', sans-serif;
+			}
 		}
 	}
-
-	&__address {
-		margin: 0 auto;
-		padding: 30px;
-		text-align: center;
-	}
-}

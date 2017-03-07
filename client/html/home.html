@@ -1,26 +1,28 @@
 <!-- home page -->
 <template name='home'>
-	<body>
-		<section class='home'>
-			<h1 class='home__header'>Tuvalu Pavilion at the 57th Venice Biennale:</h1>
-			<div class='home__address'>
-				<p>CLIMATE CANARY</p>
-				<p>Vincent J. F. Huang</p>
-				<p class='home__description'>"Of all the nations in the world, Tuvalu is perhaps the most vulnerable to climate change."</p>
-			</div>
-			<div class='home__options'>
-				<button>
-					<a href="{{pathFor 'about'}}">Tuvalu</a>
-				</button>
 
-			</div>
-		</section>
+	<section class='home'>
+		<h1 class='home__header'>Tuvalu Pavilion at the 57th Venice Biennale:</h1>
+		<div class='home__address'>
+			<p>CLIMATE CANARY</p>
+			<p>Vincent J. F. Huang</p>
+			<p class='home__description'>"Of all the nations in the world, Tuvalu is perhaps the most vulnerable to climate change."</p>
+			<p class='home__description delay'>No ground on Tuvalu stands more than five meters above sea level.</p>
+		</div>
+		<div class='home__options'>
+			<button>
+				<a href="{{pathFor 'about'}}">Tuvalu</a>
+			</button>
 
-		<!-- audio not working for some reason
-	  <audio controls>
-	  <source src="test.mp3" autoplay>
-	  </audio>
-		-->
+		</div>
+	</section>
 
-	</body>
+	<audio class='audio' loop>
+		<source src="audio/background-sound.mp3" type="audio/mp3">
+	</audio>
+
+	<script>
+		var sound = document.querySelector('.audio');
+		sound.play();
+	</script>
 </template>
