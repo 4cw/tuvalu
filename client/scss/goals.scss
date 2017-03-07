@@ -3,20 +3,20 @@
 	margin: 0 auto;
 	max-width: 800px;
 
-	.goals_header {
+	.goals__header {
 		text-align: center;
 	}
 
-	.goals_descriptions {
+	.goals__descriptions {
 		padding: 30px;
 		color:  black;
 
-		h3 {
-
+		div {
+			padding: 15px;
 		}
 	}
 
-	.programs {
+	&__programs {
 
 		ul{
 

@@ -30,23 +30,17 @@
 		min-height: 580px;
 		padding-top: 60px;
 		background-image: url("http://www.clker.com/cliparts/N/e/T/x/M/W/world-map-silhouette.svg");
-		background-position: center;
 		background-repeat: no-repeat;
-		display: flex;
-		justify-content: center;
+		background-size: 100%;
 
 		button {
 			position: absolute;
-			right: 139px;
-			bottom: 8px;
 			height: 40px;
 			width: 40px;
 			border-radius: 100%;
 			border: none;
-			-webkit-animation: glowing 1500ms infinite;
-			-moz-animation: glowing 1500ms infinite;
-			-o-animation: glowing 1500ms infinite;
 			animation: glowing 1500ms infinite;
+			right: 10%;
 		}
 
 		&--swing {
