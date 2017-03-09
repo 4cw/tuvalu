@@ -1,24 +1,31 @@
 .about{
-	background: white;
-	color: aliceblue;
 
+	&__crisis {
+		margin: 0 auto;
+		max-width: 1200px;
 
-	&__header{
-		color: gray;
-		align: center;
-		font-size: 20px;
+		&__header{
+			font-size: 40px;
+			text-align: center;
+		}
+
+		&__img {
+			float: left;
+			width: 500px;
+			padding: 30px 30px 30px 60px;
+			@media all and (max-width: 700px) {
+				display: block;
+				margin: 0 auto;
+				float: none;
+				padding: 0;
+				max-width: 80%;
+			}
+		}
+
+		p {
+			padding: 15px;
+			color: black;
+			font-size: 20px;
+		}
 	}
-
-	p{
-		text-align: center;
-		padding: 30px;
-        color: black;
-        font-size: 20px;
-	}
-.header1{
-        text-align: center;
-        font-size: 40px;
-        color: gray;
-        
-    }
 }
