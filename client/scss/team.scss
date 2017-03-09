@@ -22,7 +22,11 @@
 		}
 	}
 
-	.team__research {
+	&__research {
+
+		&__header {
+			text-align: left;
+		}
 
 	}
 
