@@ -29,6 +29,7 @@
 	min-width: 100vw;
 	min-height: calc(100vh - #{$navbar-height};
 	background-color: #c2d8fc;
+	overflow-x: hidden;
 
 	&__header {
 		text-align: center;
