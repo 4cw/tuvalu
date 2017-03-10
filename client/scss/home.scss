@@ -28,7 +28,8 @@
 .home {
 	min-width: 100vw;
 	min-height: calc(100vh - #{$navbar-height};
-	background-color: #c2d8fc;
+	padding-top: 30px;
+	background-color: rgb(186, 211, 252);
 	overflow-x: hidden;
 
 	&__header {
@@ -49,13 +50,12 @@
 		animation: slideFromRightTwo 15000ms 1;
 	}
 
-
 	&__options {
 		min-height: 580px;
-		padding-top: 60px;
-		background-image: url("http://www.clker.com/cliparts/N/e/T/x/M/W/world-map-silhouette.svg");
+		background-image: url("images/map-background.png");
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: contain;
+		background-position: center;
 
 		button {
 			position: absolute;
