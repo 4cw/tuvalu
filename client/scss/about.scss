@@ -1,19 +1,31 @@
 .about {
 	padding-top: 30px;
+	margin: 0 auto;
+	max-width: 1000px;
+
+	&__header{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	p {
+		padding: 15px 30px;
+		color: black;
+		font-size: 20px;
+		line-height: 1.5em;
+	}
+
+	figcaption {
+		font-style: italic;
+	}
 
 	&__crisis {
-		margin: 0 auto;
-		max-width: 1200px;
-
-		&__header{
-			font-size: 40px;
-			text-align: center;
-		}
 
 		&__img {
 			float: left;
 			width: 500px;
-			padding: 30px 30px 30px 60px;
+			margin: 30px 30px 30px 60px;
+
 			@media all and (max-width: 700px) {
 				display: block;
 				margin: 0 auto;
@@ -22,17 +34,24 @@
 				max-width: 80%;
 			}
 		}
+	}
+
+	&__science {
 
 
-		p {
+		figure {
+			display: block;
+			margin: 0 auto;
+			width: 800px;
+			max-width: 80%;
 			padding: 15px;
-			color: black;
-			font-size: 16px;
+
+			img {
+				margin: 0 auto;
+				max-width: 100%;
+				width: 100%;
+			}
 		}
 
-		&__science {
-			font-size: 40px;
-			text-align: left;
-		}
 	}
 }
