@@ -28,14 +28,9 @@
 .home {
 	min-width: 100vw;
 	//min-height: calc(100vh - #{$navbar-height});
-	padding-top: 30px;
 	background-color: rgb(173, 220, 70);
 	overflow-x: hidden;
 
-	&__header {
-		text-align: center;
-		font-family: 'Abril Fatface', cursive;
-	}
 
 	.delay {
 		animation-delay: 5s;
@@ -74,7 +69,14 @@
 
 	&__title {
 		margin: 0 auto;
+		padding-top: 30px;
 		text-align: center;
+		background-color: rgb(186, 211, 252);
+
+		&__header {
+			text-align: center;
+			font-family: 'Abril Fatface', cursive;
+		}
 
 		&__info {
 			padding: 30px;
