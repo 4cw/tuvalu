@@ -14,9 +14,15 @@ a {
 	color: inherit;
 }
 
+$footer-media-query: 660px;
+$footer-height: 80px;
+
 .main-yield-content {
+	min-height: calc(100vh - 80px);
 	padding-top: 60px;
-	padding-bottom: 80px;
+	@media all and (max-width: $footer-media-query) {
+		padding-bottom: 200px;
+	}
 }
 
 /* CSS Imports */
