@@ -14,15 +14,13 @@ a {
 	color: inherit;
 }
 
+$navbar-height: 60px;
 $footer-media-query: 660px;
 $footer-height: 80px;
 
 .main-yield-content {
-	min-height: calc(100vh - 80px);
-	padding-top: 60px;
-	@media all and (max-width: $footer-media-query) {
-		padding-bottom: 200px;
-	}
+	min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
+	z-index: 2;
 }
 
 /* CSS Imports */
