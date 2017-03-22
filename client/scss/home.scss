@@ -40,9 +40,10 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: top;
+		max-width: 1100px;
+		margin: 0 auto;
 
 		&__img {
-			width: 100%;
 			width: 100%;
 			max-width: 1100px;
 			margin: 0 auto;
@@ -50,15 +51,24 @@
 		}
 
 		button {
-			position: absolute;
+			display: inline;
+			position: relative;
 			height: 40px;
 			width: 40px;
-			border-radius: 100%;
 			border: none;
-			animation: glowing 1500ms infinite;
-			/*bottom: -125px;*/
-			right: 8%;
 			z-index: 0;
+			left: 92%;
+			bottom: 230px;
+			border-radius: 100%;
+
+			@media all and (max-width: 1099px) {
+				bottom: 32vh;
+			}
+
+			@media all and (min-width: 900px) and (max-width: 1098px) {
+				bottom: 29vh;
+			}
+			// animation: glowing 1500ms infinite;
 		}
 
 		&--swing {
