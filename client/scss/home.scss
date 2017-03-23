@@ -60,6 +60,7 @@
 			left: 92%;
 			bottom: 230px;
 			border-radius: 100%;
+			animation: glowing 1500ms infinite;
 
 			@media all and (max-width: 1099px) {
 				bottom: 32vh;
@@ -68,7 +69,6 @@
 			@media all and (min-width: 900px) and (max-width: 1098px) {
 				bottom: 29vh;
 			}
-			// animation: glowing 1500ms infinite;
 		}
 
 		&--swing {
