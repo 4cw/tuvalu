@@ -62,12 +62,20 @@
 			border-radius: 100%;
 			animation: glowing 1500ms infinite;
 
-			@media all and (max-width: 1099px) {
-				bottom: 32vh;
+			@media all and (min-width: 1070px) and (max-width: 1099px) {
+				bottom: 39vh;
 			}
 
-			@media all and (min-width: 900px) and (max-width: 1098px) {
-				bottom: 29vh;
+			@media all and (min-width: 1000px) and (max-width: 1071px) {
+				bottom: 37vh;
+			}
+
+			@media all and (min-width: 900px) and (max-width: 999px) {
+				bottom: 34vh;
+			}
+
+			@media all and (max-width: 767px) {
+				bottom: 90px;
 			}
 		}
 
